@@ -69,16 +69,17 @@ dependencies {
     val assertJVersion by System.getProperties()
     val awaitilityVersion by System.getProperties()
     val commonsLangVersion by System.getProperties()
-    val commonsIoVersion by System.getProperties()
-    val gsonVersion by System.getProperties()
+
+    implementation("nl.kute:kute:1.0-SNAPSHOT")
 
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
+    implementation("org.apache.commons:commons-lang3:$commonsLangVersion")
+
     // Used by Gradle tasks
     compileOnly("org.jetbrains.dokka:dokka-gradle-plugin:$dokkaVersion")
-    compileOnly("commons-io:commons-io:$commonsIoVersion")
 
     // Test stuff that inherit version from Kotlin version
     testImplementation("org.jetbrains.kotlin:kotlin-test")
@@ -95,10 +96,6 @@ dependencies {
     testImplementation("org.assertj:assertj-core:$assertJVersion")
     testImplementation("org.awaitility:awaitility:$awaitilityVersion")
 
-    // Common libraries - to be used in tests only !
-    // Do NOT use these in source code, packaged Kute should not rely on ANY external dependency
-    testImplementation("org.apache.commons:commons-lang3:$commonsLangVersion")
-    testImplementation("com.google.code.gson:gson:$gsonVersion")
 }
 
 dependencyCheck {
