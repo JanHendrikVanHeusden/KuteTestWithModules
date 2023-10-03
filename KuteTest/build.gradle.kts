@@ -70,7 +70,7 @@ dependencies {
     val awaitilityVersion by System.getProperties()
     val commonsLangVersion by System.getProperties()
 
-    implementation("nl.kute:kute:1.0-SNAPSHOT")
+    implementation("nl.kute:asstring:1.0-SNAPSHOT")
 
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib")

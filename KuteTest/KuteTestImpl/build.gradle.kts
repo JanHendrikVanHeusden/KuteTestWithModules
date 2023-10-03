@@ -33,7 +33,7 @@ dependencies {
     compileOnly("org.jetbrains.kotlin:kotlin-stdlib")
     compileOnly("org.jetbrains.kotlin:kotlin-reflect")
 
-    implementation("nl.kute:kute:1.0-SNAPSHOT")
+    implementation("nl.kute:asstring:1.0-SNAPSHOT")
 
     implementation("org.apache.commons:commons-lang3:$commonsLangVersion")
 
