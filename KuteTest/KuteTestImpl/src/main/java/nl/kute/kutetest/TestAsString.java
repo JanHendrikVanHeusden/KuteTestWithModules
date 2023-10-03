@@ -26,7 +26,7 @@ public class TestAsString extends AbstractTestAsString {
         System.out.println(superToString);
 
         if (!superToString.equals(localAsString)) {
-            throw new IllegalStateException("Both Strings should be equal, but they aren't!");
+            throw new AssertionError("Both Strings should be equal, but they aren't!");
         } else {
             System.out.println("OK :-)");
         }
