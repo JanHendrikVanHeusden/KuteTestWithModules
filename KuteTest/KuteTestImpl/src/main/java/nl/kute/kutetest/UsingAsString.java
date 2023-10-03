@@ -7,13 +7,13 @@ import java.util.Random;
 import static nl.kute.asstring.core.AsString.asString;
 
 @SuppressWarnings({"FieldMayBeFinal", "unused"})  // instance vars accessed reflectively
-public class TestAsString extends AbstractTestAsString {
+public class UsingAsString extends AbstractUsingAsString {
 
     private String aRandomString = RandomStringUtils.randomAlphabetic(5);
     private int aRandomInt = new Random().nextInt();
 
     public static void main(String[] args) {
-        TestAsString instance = new TestAsString();
+        UsingAsString instance = new UsingAsString();
 
         String localAsString = asString(instance);
 

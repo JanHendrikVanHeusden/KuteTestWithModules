@@ -9,7 +9,7 @@ import static nl.kute.asstring.config.AsStringConfigKt.asStringConfig;
 import static nl.kute.asstring.core.AsString.asString;
 
 @SuppressWarnings("unused")  // instance vars accessed reflectively
-public class TestAsStringSubClass extends TestAsString {
+public class UsingAsStringSubClass extends UsingAsString {
     List<String> myListToExclude = List.of("I", "will", "be", "excluded");
     String[] myArrayToExclude = {"I", "will", "also", "be", "excluded"};
     String[] myArrayToInclude = {"I", "will", "be", "included"};
@@ -28,7 +28,7 @@ public class TestAsStringSubClass extends TestAsString {
                     .withPropertyOmitFilters(propertyMetaFilter)
                     .applyAsDefault();
         }
-        TestAsStringSubClass instance = new TestAsStringSubClass();
+        UsingAsStringSubClass instance = new UsingAsStringSubClass();
         try {
             System.out.println("Excluded vars will be excluded:");
             String asStringResult = asString(instance);
