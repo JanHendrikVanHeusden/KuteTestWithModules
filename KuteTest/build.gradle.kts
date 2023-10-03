@@ -72,10 +72,6 @@ dependencies {
 
     implementation("nl.kute:asstring:1.0-SNAPSHOT")
 
-    // Kotlin
-    implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-
     implementation("org.apache.commons:commons-lang3:$commonsLangVersion")
 
     // Used by Gradle tasks
